@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="26dp"
+    android:background="#fff"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        style="@style/TextView.MontserratSemiBold16sp020202"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIM" />
+
+    <EditText
+        android:id="@+id/et1"
+        style="@style/EditText.MontserratSemiBold14sp8D92A3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
+        android:hint="Type your NIM "
+        android:minHeight="48dp"
+        android:padding="10dp" />
+    <TextView
+        android:layout_marginTop="16dp"
+        style="@style/TextView.MontserratSemiBold16sp020202"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/et2"
+        style="@style/EditText.MontserratSemiBold14sp8D92A3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
+        android:hint="Type your name "
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/bt1"
+        style="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Insert"
+        android:textAllCaps="false"
+        app:iconTint="#3F51B5" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Button.Secondary"
+        android:textAllCaps="false"
+
+        android:layout_marginTop="12dp"
+        android:text="View Data"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
